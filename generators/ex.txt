@@ -1,0 +1,13 @@
+nfvo:nfvo nsd ALL_CSR_DualDC
+ designer              Test
+ version               1.0
+ vnfd CSR_A
+  connection-point downstream
+   virtual-link        CSR_WAF
+   ip-sequence         1
+   physical-interface  enp133s0f0
+   need-dedicated-vlan false
+   network-epg         primary
+   vnic-type           SRIOV
+   interface-id        3
+  !
